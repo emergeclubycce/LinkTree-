@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emerge Club YCCE · Links</title>
+  <meta name="description" content="Find Emerge Club YCCE on Instagram, LinkedIn and the web.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Emerge Club YCCE: link page
+       Concept: a sun rising over a horizon line, the "emerge" idea. */
+
+    :root {
+      --dawn: #dfeaf2;
+      --ink: #14213d;
+      --sun: #f2b134;
+      --teal: #1f7a8c;
+      --white: #ffffff;
+      --radius: 18px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { height: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--dawn);
+      color: var(--ink);
+      font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: min(100%, 460px);
+      margin: 0 auto;
+      padding: 56px 20px 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Hero */
+    .hero { text-align: center; margin-bottom: 36px; }
+
+    .sunrise {
+      position: relative;
+      width: 132px;
+      height: 66px;
+      margin: 0 auto 22px;
+      overflow: hidden;
+    }
+
+    .sun {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 112px;
+      height: 112px;
+      margin-left: -56px;
+      border-radius: 50%;
+      background: var(--sun);
+      transform: translateY(100%);
+      animation: rise 1.4s cubic-bezier(.2, .7, .2, 1) 0.15s forwards;
+    }
+
+    .horizon {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 3px;
+      background: var(--ink);
+      border-radius: 3px;
+    }
+
+    @keyframes rise { to { transform: translateY(-3px); } }
+
+    h1 {
+      margin: 0;
+      font-family: "Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.2rem, 9vw, 2.8rem);
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+
+    .tagline { margin: 10px 0 0; font-size: 1rem; font-weight: 500; opacity: 0.72; }
+
+    /* Links */
+    .links { display: flex; flex-direction: column; gap: 14px; }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 22px;
+      border-radius: var(--radius);
+      background: var(--ink);
+      color: var(--white);
+      text-decoration: none;
+      border: 2px solid var(--ink);
+      transition: background-color .18s ease, color .18s ease, transform .18s ease;
+    }
+
+    .link svg { flex: none; }
+    .label { display: flex; flex-direction: column; min-width: 0; }
+
+    .label strong {
+      font-family: "Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      line-height: 1.2;
+    }
+
+    .label small { font-size: 0.875rem; opacity: 0.75; }
+
+    .link:hover { background: var(--sun); color: var(--ink); transform: translateY(-2px); }
+    .link:active { transform: translateY(0); }
+    .link:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+
+    /* Footer */
+    .foot {
+      margin-top: auto;
+      padding-top: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+    .foot p { margin: 0; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sun { animation: none; transform: translateY(-3px); }
+      .link { transition: none; }
+      .link:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <div class="sunrise" aria-hidden="true">
+        <span class="sun"></span>
+        <span class="horizon"></span>
+      </div>
+      <h1>Emerge Literature Club</h1>
+      <p class="tagline">YCCE, Nagpur</p>
+    </header>
+
+    <nav class="links" aria-label="Emerge Club links">
+      <!-- Replace each href with the club's real URL -->
+      <a class="link" href="https://www.instagram.com/emergeclub_ycce/?hl=en" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.3" cy="6.7" r="0.6" fill="currentColor"/>
+        </svg>
+        <span class="label">
+          <strong>Instagram</strong>
+          <small>Events, photos and updates</small>
+        </span>
+      </a>
+
+      <a class="link" href="https://www.linkedin.com/groups/12747793/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+          <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.5H3V9.75Zm6.5 0h3.83v1.57h.06c.53-1 1.84-2.07 3.78-2.07 4.04 0 4.78 2.66 4.78 6.1v5.9h-4v-5.23c0-1.25-.02-2.85-1.74-2.85-1.74 0-2 1.36-2 2.76v5.32h-4V9.75Z"/>
+        </svg>
+        <span class="label">
+          <strong>LinkedIn</strong>
+          <small>Follow our community</small>
+        </span>
+      </a>
+
+      <a class="link" href="https://www.emergeycce.club/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z"/>
+        </svg>
+        <span class="label">
+          <strong>Website</strong>
+          <small>About the club and upcoming events</small>
+        </span>
+      </a>
+    </nav>
+
+    <footer class="foot">
+      <p>Emerge Club, YCCE</p>
+    </footer>
+
+  </main>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emerge Club YCCE · Links</title>
+  <meta name="description" content="Find Emerge Club YCCE on Instagram, LinkedIn and the web.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Emerge Club YCCE: link page
+       Concept: a sun rising over a horizon line, the "emerge" idea. */
+
+    :root {
+      --dawn: #dfeaf2;
+      --ink: #14213d;
+      --sun: #f2b134;
+      --teal: #1f7a8c;
+      --white: #ffffff;
+      --radius: 18px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { height: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--dawn);
+      color: var(--ink);
+      font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: min(100%, 460px);
+      margin: 0 auto;
+      padding: 56px 20px 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Hero */
+    .hero { text-align: center; margin-bottom: 36px; }
+
+    .sunrise {
+      position: relative;
+      width: 132px;
+      height: 66px;
+      margin: 0 auto 22px;
+      overflow: hidden;
+    }
+
+    .sun {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 112px;
+      height: 112px;
+      margin-left: -56px;
+      border-radius: 50%;
+      background: var(--sun);
+      transform: translateY(100%);
+      animation: rise 1.4s cubic-bezier(.2, .7, .2, 1) 0.15s forwards;
+    }
+
+    .horizon {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 3px;
+      background: var(--ink);
+      border-radius: 3px;
+    }
+
+    @keyframes rise { to { transform: translateY(-3px); } }
+
+    h1 {
+      margin: 0;
+      font-family: "Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.2rem, 9vw, 2.8rem);
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+
+    .tagline { margin: 10px 0 0; font-size: 1rem; font-weight: 500; opacity: 0.72; }
+
+    /* Links */
+    .links { display: flex; flex-direction: column; gap: 14px; }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 22px;
+      border-radius: var(--radius);
+      background: var(--ink);
+      color: var(--white);
+      text-decoration: none;
+      border: 2px solid var(--ink);
+      transition: background-color .18s ease, color .18s ease, transform .18s ease;
+    }
+
+    .link svg { flex: none; }
+    .label { display: flex; flex-direction: column; min-width: 0; }
+
+    .label strong {
+      font-family: "Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      line-height: 1.2;
+    }
+
+    .label small { font-size: 0.875rem; opacity: 0.75; }
+
+    .link:hover { background: var(--sun); color: var(--ink); transform: translateY(-2px); }
+    .link:active { transform: translateY(0); }
+    .link:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+
+    /* Footer */
+    .foot {
+      margin-top: auto;
+      padding-top: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+    .foot p { margin: 0; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sun { animation: none; transform: translateY(-3px); }
+      .link { transition: none; }
+      .link:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <div class="sunrise" aria-hidden="true">
+        <span class="sun"></span>
+        <span class="horizon"></span>
+      </div>
+      <h1>Emerge Club</h1>
+      <p class="tagline">YCCE, Nagpur</p>
+    </header>
+
+    <nav class="links" aria-label="Emerge Club links">
+      <!-- Replace each href with the club's real URL -->
+      <a class="link" href="https://www.instagram.com/YOUR_EMERGE_HANDLE" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.3" cy="6.7" r="0.6" fill="currentColor"/>
+        </svg>
+        <span class="label">
+          <strong>Instagram</strong>
+          <small>Events, photos and updates</small>
+        </span>
+      </a>
+
+      <a class="link" href="https://www.linkedin.com/company/YOUR_EMERGE_PAGE" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+          <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.5H3V9.75Zm6.5 0h3.83v1.57h.06c.53-1 1.84-2.07 3.78-2.07 4.04 0 4.78 2.66 4.78 6.1v5.9h-4v-5.23c0-1.25-.02-2.85-1.74-2.85-1.74 0-2 1.36-2 2.76v5.32h-4V9.75Z"/>
+        </svg>
+        <span class="label">
+          <strong>LinkedIn</strong>
+          <small>Follow our community</small>
+        </span>
+      </a>
+
+      <a class="link" href="https://YOUR-EMERGE-WEBSITE.com" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z"/>
+        </svg>
+        <span class="label">
+          <strong>Website</strong>
+          <small>About the club and upcoming events</small>
+        </span>
+      </a>
+    </nav>
+
+    <footer class="foot">
+      <p>Emerge Club, YCCE</p>
+    </footer>
+
+  </main>
+</body>
+</html>
